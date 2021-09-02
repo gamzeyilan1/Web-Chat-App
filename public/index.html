@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Off My Chest</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"
+            integrity="sha512-WL6WGKMPBiM9PnHRYIn5YEtq0Z8XP4fkVb4qy7PP4vhmYQErJ/dySyXuFIMDf1eEYCXCrQrMJfkNwKc9gsjTjA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div>
+    <div id="sender-window">
+        <a href="https://www.reddit.com/r/offmychest/">
+        <img src="https://brandpalettes.com/wp-content/uploads/2018/10/Reddit_logo-300x114.png?ezimgfmt=ng:webp/ngcb1"
+             id="image" >
+        </a>
+        <p> Off My Chest is a mutually supportive community where deeply emotional things you can't tell people you know can be told. <br><br> This chat is inspired by the subreddit to create an easier way of communication, one to one, that serves the same purpose. Click on the logo to see the subreddit. <br><br> <b>Type in a username and start chatting!</b> <br>
+        </p>
+    <input type="text" id="sender" placeholder="Name">
+    </div>
+    <div id="chat-wrap">
+        <h2>What's Troubling You?</h2>
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="feedback"></div>
+        </div>
+
+        <input type="text" id="message" placeholder="Message">
+        <button id="submitBtn">Submit</button>
+    </div>
+</div>
+<script src="chat.js"></script>
+</body>
+</html>
